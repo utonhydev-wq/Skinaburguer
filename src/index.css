@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0c0c0e;
+    color: #f3f4f6;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Oswald', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+@keyframes flame-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px -5px rgba(245, 158, 11, 0.4), 0 0 10px -2px rgba(239, 68, 68, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 35px 2px rgba(245, 158, 11, 0.6), 0 0 20px 4px rgba(239, 68, 68, 0.4);
+  }
+}
+
+.animate-flame-pulse {
+  animation: flame-pulse 3s infinite ease-in-out;
+}
